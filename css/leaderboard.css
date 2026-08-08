@@ -1,0 +1,340 @@
+/* ================================
+   TOP LEADERBOARD TABLES
+================================ */
+
+.top-tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 30px 0 35px;
+}
+
+.mini-board {
+    background: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+.mini-board-title {
+    background: #123456;
+}
+
+.mini-board-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    background: linear-gradient(135deg, #0b1f3a, #173d68);
+    color: #ffffff;
+}
+
+.mini-board-title h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.mini-board-title span {
+    font-size: 22px;
+}
+
+.mini-board table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mini-board th {
+    padding: 12px 18px;
+    text-align: left;
+    background: #f5f7fa;
+    color: #526173;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.mini-board td {
+    padding: 13px 18px;
+    border-top: 1px solid #edf0f4;
+    color: #26364a;
+    font-size: 13px;
+}
+
+.mini-board tbody tr:hover {
+    background: #f8fafc;
+}
+
+.mini-board td:last-child {
+    font-weight: 700;
+    text-align: right;
+}
+
+.mini-board th:last-child {
+    text-align: right;
+}
+
+
+/* ================================
+   MAIN LEADERBOARD
+================================ */
+
+.board-wrap {
+    margin-top: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .top-tables {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin: 20px 0 25px;
+    }
+
+    .mini-board-title {
+        padding: 15px 18px;
+    }
+
+    .mini-board td,
+    .mini-board th {
+        padding: 11px 14px;
+    }
+
+/* ================================
+   ORANGE TOP TABLES
+================================ */
+
+.top-tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    margin: 30px 0 35px;
+}
+
+.mini-board {
+    background: #ffffff;
+    border: 1px solid #f58220;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(245, 130, 32, 0.15);
+}
+
+/* ORANGE HEADER */
+.mini-board-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px 32px;
+
+    background: linear-gradient(
+        135deg,
+        #f58220,
+        #ff9f43
+    );
+
+    color: #ffffff;
+}
+
+.mini-board-title h3 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.mini-board-title span {
+    font-size: 30px;
+}
+
+/* TABLE */
+.mini-board table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mini-board th {
+    padding: 20px 27px;
+    text-align: left;
+
+    background: #fff3e6;
+    color: #d86600;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.mini-board td {
+    padding: 20px 27px;
+
+    border-top: 1px solid #f1e4d8;
+
+    color: #173d68;
+    font-size: 17px;
+}
+
+.mini-board th:last-child,
+.mini-board td:last-child {
+    text-align: right;
+}
+
+.mini-board td:last-child {
+    font-weight: 700;
+    color: #f58220;
+}
+
+/* HOVER */
+.mini-board tbody tr:hover {
+    background: #fff8f2;
+}
+
+/* FIRST RANK */
+.mini-board tbody tr:first-child td:first-child {
+    color: #f58220;
+    font-weight: 800;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .top-tables {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mini-board-title {
+        padding: 20px 22px;
+    }
+
+    .mini-board-title h3 {
+        font-size: 21px;
+    }
+
+    .mini-board th,
+    .mini-board td {
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+}
+}/* Main Heading */
+.leaderboard-title h2{
+    font-size:48px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.leaderboard-title p{
+    font-size:17px;
+    color:#b5b5b5;
+}
+
+/* Table Container */
+.board{
+    width:100%;
+    background:#111;
+    border:1px solid #2c2c2c;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,.3);
+}
+
+/* Table Header */
+.board-head{
+    display:grid;
+    grid-template-columns:70px 1.5fr 2fr 1.4fr 110px;
+    gap:18px;
+    padding:18px 22px;
+    background:#ff8c00;
+    color:#111;
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.8px;
+}
+
+/* Table Rows */
+.board-row{
+    display:grid;
+    grid-template-columns:70px 1.5fr 2fr 1.4fr 110px;
+    gap:18px;
+    padding:16px 22px;
+    font-size:15px;
+    color:#fff;
+    font-weight:500;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    transition:.25s;
+}
+
+.board-row:hover{
+    background:#1b1b1b;
+}
+
+/* Rank */
+.rank{
+    font-size:17px;
+    font-weight:700;
+    color:#ffb347;
+}
+
+/* Score */
+.score{
+    font-size:17px;
+    font-weight:700;
+    color:#34d399;
+    text-align:center;
+}
+
+/* Loading Text */
+.table-status{
+    padding:18px 22px;
+    font-size:15px;
+    color:#bdbdbd;
+}
+/* Bottom leaderboard table - Orange */
+.bottom-board {
+    border: 1px solid #f97316;
+}
+
+.bottom-board .mini-board-title {
+    background: #f97316;
+    color: #ffffff;
+}
+
+.bottom-board .mini-board-title h3 {
+    color: #ffffff;
+}
+
+.bottom-board .mini-board-title span {
+    color: #ffffff;
+}
+
+.bottom-board table thead th {
+    background: #f97316;
+    color: #ffffff;
+}
+
+.bottom-board table tbody tr:hover {
+    background: #fff7ed;
+}
+
+.bottom-board table tbody td:last-child {
+    color: #f97316;
+    font-weight: 700;
+}
+.bottom-board table thead th {
+    background-color: #fff1e6;
+    color: #c2410c;
+    font-weight: 700;
+}
